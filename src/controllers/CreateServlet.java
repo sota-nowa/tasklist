@@ -49,7 +49,7 @@ public class CreateServlet extends HttpServlet {
             em.getTransaction().commit();
             em.close();
 
-            response.sendRedirect(request.getContextPath() + "/index");
+            response.sendRedirect(request.getContextPath() + "/index"); //最後にデータ一覧にリダイレクト
         }
     }
 
